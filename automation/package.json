@@ -1,0 +1,30 @@
+{
+  "name": "AQ-Pictureautomation-test",
+  "description": "Automatic ...",
+  "version": "1.0.52",
+  "dependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^16.11.12",
+    "@types/node-fetch": "^2.5.12",
+    "command-line-args": "^5.2.0",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^2.6.6",
+    "typescript": "^4.5.3"
+  },
+  "scripts": {
+    "push": "tsc; git add --all; git commit --allow-empty-message; git push; ",
+    "automation": "node ./bin/PictureAutomation.js",
+    "compile": "cd; cd /Users/jonas/Programming/AQstify/automation/src; tsc; cd ..; cd bin"
+  },
+  "main": "./bin/PictureAutomation.js",
+  "files": [
+    "bin/"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://myGitHub.repo"
+  },
+  "bin": "./bin/PictureAutomation.js"
+}

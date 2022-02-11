@@ -1,0 +1,22 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "allowJs": false,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "module": "esnext",
+    "target": "esnext",
+    "outDir": "bin",
+    "lib": [
+      "esnext"
+    ],
+  },
+  "include": [
+    "src"
+  ]
+}

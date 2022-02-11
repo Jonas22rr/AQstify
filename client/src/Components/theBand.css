@@ -1,0 +1,53 @@
+.theBand-Box {
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+.theBand-Img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.theBand-names {
+    margin: auto;
+    padding: 0px 0px 15px 0px;
+}
+
+.memberPic {
+    max-width: 200px;
+    margin: auto;
+    box-shadow: 10px 10px 11px grey;
+}
+
+.bandMembers {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+    margin-top: 50px;
+}
+
+.bandMember {
+    display: grid;
+}
+
+@media screen and (max-width: 1150px) {
+    .bandMembers {
+        display: grid;
+        text-align: center;
+    }
+    .bandMember {
+        justify-content: space-around;
+        margin: 0px 0px 25px 0px;
+        padding: 10px;
+    }
+    .memberPic {
+        max-width: 350px;
+        margin: auto;
+        box-shadow: none;
+    }
+}

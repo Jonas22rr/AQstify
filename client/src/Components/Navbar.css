@@ -1,0 +1,28 @@
+.Navbar-Container {
+    background-color: black;
+    margin-top: 0px;
+    border: 0px;
+}
+.Navbar-MainContainer {
+    position: fixed;
+}
+
+.Navbar-margin-left {
+    margin-left: 15px;
+}
+
+.Navbar-margin-right {
+    margin-right: 15px;
+}
+.Navbar-margin {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.Navbar-margin-top {
+    margin-top: 7px;
+}
+
+.NameTag {
+    color: white !important;
+}

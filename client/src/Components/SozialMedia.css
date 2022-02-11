@@ -1,0 +1,113 @@
+.SozialMedia-Container {
+    width: 640px;
+    margin: auto;
+    clear: both !important;
+    padding-top: 60px;
+    text-align: center;
+    /* display: flex */
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+/* .SozialMedia-Btn {
+    width: 300px;
+    background-color: white;
+    padding: 20px 0px !important;
+    border-radius: 10px;
+    margin: auto !important;
+} */
+
+.Insta-Btn {
+    float: left !important;
+    background-color: white;
+}
+
+.YouTube-Btn {
+    float: right !important;
+    background-color: white;
+}
+
+.SozialMedia-Style {
+    padding: 20px 100px;
+    border-radius: 10px;
+}
+
+.SozialMedia-TextWidth {
+    width: 310px;
+    height: 70px;
+}
+
+@media screen and (max-width: 700px) {
+    .SozialMedia-Container {
+        clear: both !important;
+        padding-top: 60px;
+        text-align: center;
+        width: 340px !important;
+        display: grid ;
+    }
+
+    .SozialMedia-TextWidth {
+        width: 340px !important;
+        height: 70px;
+    }
+
+    .SozialMedia-Btn {
+        margin: auto !important;
+        background-color: white;
+        padding: 20px 0px !important;
+        border-radius: 10px;
+    }
+
+    .SozialMedia-Spacer {
+        height: 10px;
+    }
+
+    .SozialMedia-Style {
+        padding: 20px 0px !important;
+        border-radius: 10px;
+        width: 340px !important;
+    }
+
+    #YouTube {
+        background-color: white;
+        padding-right: 5px;
+    }
+    
+    #Insta {
+        background-color: white;
+        padding-right: 5px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#YouTube {
+    background-color: white;
+    width: 35px;
+    padding-right: 5px;
+}
+
+#Insta {
+    background-color: white;
+    width: 30px;
+    padding-right: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .SozialMedia-Style {
+        padding: 20px 0px !important;
+        border-radius: 10px;
+        margin: auto;
+        width: 308px !important;
+    }
+}

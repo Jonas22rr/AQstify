@@ -1,0 +1,15 @@
+* {
+    color: white;
+    background-color: black;
+}
+
+.Container {
+    max-width: 70%;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+.App-CB {
+    text-decoration: none;
+    visibility: hidden;
+}

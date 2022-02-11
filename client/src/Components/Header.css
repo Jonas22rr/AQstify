@@ -1,0 +1,12 @@
+.Header {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.anchor {
+    display: block;
+    height: 100px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+}
