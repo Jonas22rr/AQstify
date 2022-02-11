@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import Gallery, { PhotoClickHandler } from "react-photo-gallery";
+import Gallery from "react-photo-gallery";
 import { photos } from "../photos";
 import { PhotogalleryProps as Props } from "../model/types";
-import { TargetElement } from "@testing-library/user-event";
 
 class Photogallery extends React.Component {
     constructor(props: Props) {

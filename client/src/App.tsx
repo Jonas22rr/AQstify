@@ -6,7 +6,7 @@ import Homepage from "./Components/Homepage";
 import DataPrivacy from "./Components/dataPrivacy";
 import Photogallery from "./Components/Photogallery";
 import Login from "./Components/Login";
-import { useState, FunctionComponent as FC, SetStateAction } from "react";
+import { useState, SetStateAction } from "react";
 import { AppState as State } from "./model/types";
 
 function App() {
