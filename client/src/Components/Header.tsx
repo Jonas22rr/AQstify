@@ -11,7 +11,6 @@ class Header extends React.Component<Props> {
     render() {
         return (
             <div className="Header">
-                <span id={this.props.id} className="anchor"></span>
                 <h1>{this.props.header}</h1>
             </div>
         );

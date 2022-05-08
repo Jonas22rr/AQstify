@@ -18,7 +18,7 @@ class Photogallery extends React.Component {
     render() {
         return (
             <div>
-                <Header id="photogallery" header="Fotogalerie" />
+                <Header header="Fotogalerie" />
                 <Gallery photos={photos} onClick={this.onPhotoClick} />
             </div>
         );

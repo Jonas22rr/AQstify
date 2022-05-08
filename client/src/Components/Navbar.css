@@ -1,5 +1,4 @@
 .Navbar-Container {
-    background-color: black;
     margin-top: 0px;
     border: 0px;
 }
@@ -9,6 +8,7 @@
 
 .Navbar-margin-left {
     margin-left: 15px;
+    color: aliceblue !important;
 }
 
 .Navbar-margin-right {
@@ -26,3 +26,27 @@
 .NameTag {
     color: white !important;
 }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #666666;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

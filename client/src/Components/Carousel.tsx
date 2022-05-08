@@ -7,13 +7,11 @@ import seven from "./pictures/7.jpg";
 import eight from "./pictures/8.jpg";
 import ten from "./pictures/10.jpg";
 import "./Carousel.css";
-import Header from "./Header";
 
 class PicCarousel extends React.Component {
     render() {
         return (
-            <div>
-                <Header id="Home" />
+            <div className="Carousel-container" id="Header">
                 <Carousel>
                     <Carousel.Item interval={5000}>
                         <img
@@ -52,6 +50,7 @@ class PicCarousel extends React.Component {
                         />
                     </Carousel.Item>
                 </Carousel>
+                <div id="theBand"></div>
             </div>
         );
     }

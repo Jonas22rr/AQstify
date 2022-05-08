@@ -4,3 +4,7 @@
     max-height: 600px;
     object-fit: contain;
 }
+
+.Carousel-container {
+    margin: 60px 0px 30px 0px;
+}

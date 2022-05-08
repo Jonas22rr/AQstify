@@ -1,176 +1,86 @@
-/* .Contact-Container {
+  .Contact-bg {
+    height: 100% !important;
+    background-color: rgb(65, 65, 65);
+  }
+
+  .Contact-spacer {
+    height: 0px;
+  }
+
+  .Contact-container {
+    display: flex;
     margin: auto;
+    max-width: 920px !important;
+    width: 100%;
+    padding: 15px;
+
+  }
+
+  .Contact-item {
+    flex-direction: row;
+    margin: auto ;
+    align-content: center;
+    padding: 15px;
 }
 
-.Contact-ContactMain {
+.Contact-nameInput {
+  flex-direction: row;
+  margin: auto ;
+  align-content: center;
+  padding-right: 10px;
+}
+
+.Contact-emailInput {
+  flex-direction: row;
+  margin: auto ;
+  align-content: center;
+  padding-left: 10px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  .Contact-nameInput {
+    margin: auto ;
+    align-content: center;
+    padding: 10px 0px;
+    min-width: 160px;
     width: 100%;
-    
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-} */
-
-.contactContainer {
+    flex-wrap: wrap !important;
+  }
+  
+  .Contact-emailInput {
+    margin: auto ;
+    align-content: center;
+    min-width: 160px;
     width: 100%;
-  }
-  
-  .contactBox {
-    margin: auto;
-    width: 640px;
-    padding: 20px 0px 20px 0px;
-  }
-  
-  .contact1 {
-    float: left;
-    width: 300px;
-  }
-  
-  .contact1 div {
-    padding: 10px 0px !important;
-  }
-  
-  .contact2 {
-    float: right;
-    width: 340px;
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  .inputContainer {
-    width: 340px;
-    margin: 0px;
-  }
-  
-  .littleInput {
-    width: 162px;
-    padding: 5px 0px 5px 5px;
-    height: 25px;
-    color: black;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 0px;
-    background-color: white;
-  }
-  
-  .messageContainer {
-    padding-top: 9px;
-    width: 340px;
-  }
-  
-  #messageInput {
-    border-radius: 5px;
-    border: 0px;
-    padding: 5px 0px 5px 5px;
-    width: 335px;
-    height: 75px;
-    color: black;
-    font-size: 15px;
-    margin: 0px;
-    padding-right: 0px;
-    background-color: white;
+    padding: 10px 0px;
+    flex-wrap: wrap !important;
   }
 
-  #nameInput{
-    margin-right: 5px;
-    margin-left: 0px;
-    background-color: white;
-
+  .Contact-textArea {
+    padding: 10px 0px;
   }
-  
-  .btnContainer {
-    padding-top: 8px;
+
+  .Contact-wrap {
+    flex-wrap: wrap;
   }
-  
-  #idBtn {
-    float: left;
-    position: absolute;
-    color: black;
-    float: right;
-    height: 30px;
-    border-radius: 5px;
-    background-color: white;
-    font-size: 15px;
-    margin: 0px;
-    border: none;
+
+  .Contact-noPaddingImportant {
+    padding: 0% !important;
   }
-  
-  #idBtn:hover {
-    background-color: rgb(24, 119, 24);
-    color: white;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .contactBox {
-      margin: auto !important;
-      width: 340px;
-    }
+}
 
-    .contact1 {
-      overflow: hidden;
-      clear: both;
-    }
+.Contact-youTube {
+  width: 50px !important;
+}
 
-    .contact2 {
-      background-color: black;
-      padding-left: 0px;
-      margin-left: 0px;
-      margin: auto !important;
-    }
+.Contact-facebook {
+  width: 40px !important;
+}
 
-    #idBtn {
-      float: left;
-    }
-  }
-  @media screen and (max-width: 480px) {
-   
-    .contactBox {
-      margin: auto !important;
-    }
+.Contact-insta {
+  width: 40px !important;
+}
 
-    .contact1 {
-      -webkit-padding-start: 15px;
-      margin-bottom: 10px;
-      overflow: hidden;
-      clear: both;
-    }
-
-    .littleInput {
-      width: 145px;
-      padding: 5px 0px 5px 5px;
-      height: 25px;
-      color: black;
-      font-size: 15px;
-      border-radius: 5px;
-      border: 0px;
-    }
-    
-    .messageContainer {
-      padding-top: 9px;
-      width: 300px;
-
-    }
-    
-    #messageInput {
-      border-radius: 5px;
-      border: 0px;
-      padding: 5px 0px 5px 5px;
-      width: 300px;
-      height: 75px;
-      color: black;
-      font-size: 15px;
-      margin: 0px;
-      padding-right: 0px;
-      background-color: white;
-    }
-  
-    #nameInput{
-      margin-right: 5px;
-      margin-left: 0px;
-  
-    }
-
-    #emailInput{
-      margin-left: 5px;
-    }
-  }
   

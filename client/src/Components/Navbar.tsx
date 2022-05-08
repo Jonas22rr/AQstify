@@ -2,14 +2,13 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
 import { NavigationBarProps as Props } from "../model/types";
 
 class NavigationBar extends React.Component<Props, {}> {
     render() {
         return (
             <div id="Navbar-MainContainer">
-                <Navbar variant="dark" expand="lg" fixed="top">
+                <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
                     <Navbar.Brand className="Navbar-margin-left">
                         <Nav.Link href="/" className="NameTag">
                             AQstify
@@ -28,21 +27,36 @@ class NavigationBar extends React.Component<Props, {}> {
                             style={{ maxHeight: "100px" }}
                             navbarScroll
                         >
-                            <Nav.Link href="/">{this.props.Nav1}</Nav.Link>
-                            <Nav.Link href="#theBand">
+                            <Nav.Link
+                                href="/"
+                                className="hover-underline-animation"
+                            >
+                                {this.props.Nav1}
+                            </Nav.Link>
+                            <Nav.Link
+                                href="#theBand"
+                                className="hover-underline-animation"
+                            >
                                 {this.props.Nav2}
                             </Nav.Link>
-                            <Nav.Link href="#references">
+                            <Nav.Link
+                                href="#references"
+                                className="hover-underline-animation"
+                            >
                                 {this.props.Nav3}
                             </Nav.Link>
-                            <Nav.Link href="#contactUs">
+                            <Nav.Link
+                                href="#contactUs"
+                                className="hover-underline-animation"
+                            >
                                 {this.props.Nav4}
                             </Nav.Link>
-                            <Link to="/photogallery">
-                                <Nav.Link href="/photogallery">
-                                    {this.props.Nav5}
-                                </Nav.Link>
-                            </Link>
+                            <Nav.Link
+                                href="/photogallery"
+                                className="hover-underline-animation"
+                            >
+                                {this.props.Nav5}
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

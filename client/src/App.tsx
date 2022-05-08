@@ -8,6 +8,7 @@ import Photogallery from "./Components/Photogallery";
 import Login from "./Components/Login";
 import { useState, SetStateAction } from "react";
 import { AppState as State } from "./model/types";
+import i18n from "./i18n/i18n.json";
 
 function App() {
     let [login, setLogin] = useState<State>({
@@ -40,8 +41,7 @@ function App() {
                             element={
                                 <main style={{ padding: "1rem" }}>
                                     <p>
-                                        Dieser Link ist Ungültig. Bitte
-                                        Überprüfe deine URL
+                                        {i18n.pageNotFound}
                                     </p>
                                 </main>
                             }

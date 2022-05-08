@@ -3,7 +3,7 @@ import Header from "./Header";
 
 class Impressum extends React.Component<{}, {}> {
     render() {
-        return <Header id="impressum" header="Impressum" />;
+        return <Header header="Impressum" />;
     }
 }
 

@@ -1,12 +1,11 @@
 .Header {
     color: white;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
-.anchor {
-    display: block;
-    height: 100px; /*same height as header*/
-    margin-top: -115px; /*same height as header*/
-    visibility: hidden;
+@media screen and (max-width: 600px) {
+    .Header {
+        padding-top: 35px;
+    }
 }

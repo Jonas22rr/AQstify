@@ -1,33 +1,32 @@
-export interface global{}
+export interface global {}
 
 export interface HeaderProps {
-    id : string
-    header? : string
+    header: string;
 }
 
 export interface NavigationBarProps {
-    Nav1 : string
-    Nav2 : string
-    Nav3 : string
-    Nav4 : string
-    Nav5 : string
+    Nav1: string;
+    Nav2: string;
+    Nav3: string;
+    Nav4: string;
+    Nav5: string;
 }
 
 export interface LoginProps {
-    userLogin: any
+    userLogin: any;
 }
 
 export interface AppState {
-    login : Boolean
+    login: Boolean;
 }
 
-export interface ContactState{
-    check: Boolean
-    nameInput:string
-    emailInput: string
-    messageInput: string
+export interface ContactState {
+    check: Boolean;
+    nameInput: string;
+    emailInput: string;
+    messageInput: string;
 }
 
-export interface ContactProps{}
+export interface ContactProps {}
 
-export interface PhotogalleryProps{}
+export interface PhotogalleryProps {}

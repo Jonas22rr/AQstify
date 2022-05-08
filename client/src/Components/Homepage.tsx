@@ -3,7 +3,6 @@ import PicCarousel from "./Carousel";
 import TheBand from "./theBand";
 import References from "./References";
 import Contact from "./Contact";
-import SozialMedia from "./SozialMedia";
 import LegalNotice from "./LegalNotice";
 
 class Homepage extends React.Component<{}, {}> {
@@ -15,7 +14,6 @@ class Homepage extends React.Component<{}, {}> {
                     <TheBand />
                     <References />
                     <Contact />
-                    <SozialMedia />
                     <LegalNotice />
                 </div>
             </div>
