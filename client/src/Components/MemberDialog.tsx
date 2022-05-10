@@ -1,5 +1,4 @@
-import React, { FunctionComponent, useEffect } from "react";
-import { Button } from "react-bootstrap";
+import React, { FunctionComponent } from "react";
 import Modal from "react-bootstrap/Modal";
 import { MemberDialogProps, Memberinfos } from "../model/types.js";
 import "./MemberDialog.css";

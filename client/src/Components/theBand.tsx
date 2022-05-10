@@ -1,4 +1,4 @@
-import React, { FunctionComponent as FC, MouseEventHandler } from "react";
+import React, { FunctionComponent as FC } from "react";
 import Header from "./Header";
 import "./theBand.css";
 import ThorstenBott from "./pictures/Thorsten_Bott.jpeg";
