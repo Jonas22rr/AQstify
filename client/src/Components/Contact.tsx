@@ -12,6 +12,7 @@ import Phone from "./icons/Telephone.png";
 import Location from "./icons/Location.png";
 import Facebook from "./icons/Facebook.png";
 import i18n from "../i18n/i18n.json";
+import MemberDialog from "./MemberDialog";
 
 // wenn Props oder State der Klasse leer ist muss es mit einem leeren Object gefüllt werden -> <{}, State>
 

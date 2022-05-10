@@ -54,8 +54,13 @@
 .theBand-memberPic {
     margin: auto;
     box-shadow: 10px 10px 11px grey;
+    cursor: pointer;
 }
 
 .theBand-mainText {
     text-align: center;
+}
+
+#idMemberPicture {
+    cursor: pointer;
 }

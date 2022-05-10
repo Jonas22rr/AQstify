@@ -30,3 +30,14 @@ export interface ContactState {
 export interface ContactProps {}
 
 export interface PhotogalleryProps {}
+
+export interface MemberDialogProps {
+    onHide: any;
+    member: string;
+}
+
+export interface Memberinfos {
+    id: string;
+    name: string;
+    infoText: string;
+}
