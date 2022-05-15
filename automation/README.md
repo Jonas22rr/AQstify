@@ -1,5 +1,8 @@
 #file-configuration - examples for a automation
 
+with command `npm run automation`, will be all photos from client-picture-folder, new generated into the photo.js file, in client-folder
+
+
 ##example tsconfig.json
 
 `{
