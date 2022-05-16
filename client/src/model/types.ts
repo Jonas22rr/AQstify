@@ -32,7 +32,8 @@ export interface ContactProps {}
 export interface PhotogalleryProps {}
 
 export interface MemberDialogProps {
-    onHide: any;
+    show: boolean;
+    onClose: any;
     member: string;
 }
 

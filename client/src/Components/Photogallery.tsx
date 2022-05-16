@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Gallery from "react-photo-gallery";
+import PhotoAlbum from "react-photo-album";
 import { photos } from "../photos";
 import { PhotogalleryProps as Props } from "../model/types";
 
@@ -19,7 +19,7 @@ class Photogallery extends React.Component {
         return (
             <div>
                 <Header header="Fotogalerie" />
-                <Gallery photos={photos} onClick={this.onPhotoClick} />
+                <PhotoAlbum layout="rows" photos={photos} />
             </div>
         );
     }

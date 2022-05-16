@@ -78,7 +78,9 @@ const TheBand: FC = () => {
             <MemberDialog
                 //@ts-ignore
                 show={modalShow}
-                onHide={() => setModalShow(false)}
+                onClose={(modalShow: React.SetStateAction<boolean>) =>
+                    setModalShow(modalShow)
+                }
                 member={member}
             />
             <div id="references"></div>
