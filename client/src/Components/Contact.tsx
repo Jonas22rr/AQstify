@@ -101,7 +101,7 @@ class Contact extends React.Component<Props, State> {
         return (
             <div className="Contact-bg">
                 <div className="Contact-spacer"></div>
-                <Header header="Kontaktiere uns" />
+                <Header id="contactUs" header="Kontaktiere uns" />
                 <div className="Contact-container Contact-wrap ">
                     <div
                         className="Contact-item "

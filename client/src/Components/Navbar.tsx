@@ -46,6 +46,12 @@ class NavigationBar extends React.Component<Props, {}> {
                                 {this.props.Nav3}
                             </Nav.Link>
                             <Nav.Link
+                                href="#watch"
+                                className="hover-underline-animation"
+                            >
+                                {this.props.Nav6}
+                            </Nav.Link>
+                            <Nav.Link
                                 href="#contactUs"
                                 className="hover-underline-animation"
                             >

@@ -1,6 +1,7 @@
 export interface global {}
 
 export interface HeaderProps {
+    id: string;
     header: string;
 }
 
@@ -10,6 +11,7 @@ export interface NavigationBarProps {
     Nav3: string;
     Nav4: string;
     Nav5: string;
+    Nav6: string;
 }
 
 export interface LoginProps {

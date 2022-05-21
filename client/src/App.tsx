@@ -26,6 +26,7 @@ function App() {
                         Nav3="Referenzen"
                         Nav4="Kontaktiere uns"
                         Nav5="Fotogalerie"
+                        Nav6="Watch"
                     />
                     <h1 className="App-CB">"Clear: both"</h1>
                     <Routes>

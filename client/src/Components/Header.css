@@ -1,11 +1,14 @@
 .Header {
     color: white;
     text-align: center;
-    padding-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
     .Header {
         padding-top: 35px;
     }
+}
+
+.anker{
+    padding-bottom: 50px;
 }

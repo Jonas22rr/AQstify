@@ -13,7 +13,7 @@ const TheBand: FC = () => {
 
     return (
         <div>
-            <Header header="Die Band" />
+            <Header id="theBand" header="Die Band" />
             <div className="theBand-container">
                 <span className="theBand-mainText">{i18n.bandText}</span>
             </div>
@@ -83,7 +83,6 @@ const TheBand: FC = () => {
                 }
                 member={member}
             />
-            <div id="references"></div>
         </div>
     );
 };
