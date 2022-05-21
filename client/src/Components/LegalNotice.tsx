@@ -1,7 +1,6 @@
 import React from "react";
 import "./LegalNotice.css";
 import { Link } from "react-router-dom";
-import i18n from "../i18n/i18n.json";
 import { Trans } from "react-i18next";
 
 class LegalNotice extends React.Component<{}, {}> {

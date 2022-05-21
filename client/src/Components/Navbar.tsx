@@ -6,7 +6,6 @@ import {
     NavigationBarProps as Props,
     NavigationBarState as State,
 } from "../model/types";
-import { ThemeProvider } from "@mui/material";
 
 class NavigationBar extends React.Component<Props, State> {
     public constructor(props: Props) {
