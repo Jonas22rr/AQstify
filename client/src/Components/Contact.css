@@ -37,7 +37,9 @@
   padding-left: 10px;
 }
 
-
+.Contact-textArea {
+  flex-direction: column;
+}
 
 @media screen and (max-width: 850px) {
   .Contact-nameInput {
@@ -56,6 +58,7 @@
     width: 100%;
     padding: 10px 0px;
     flex-wrap: wrap !important;
+    
   }
 
   .Contact-textArea {

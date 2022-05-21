@@ -2,7 +2,6 @@ export interface global {}
 
 export interface HeaderProps {
     id: string;
-    header: string;
 }
 
 export interface NavigationBarProps {
@@ -12,6 +11,11 @@ export interface NavigationBarProps {
     Nav4: string;
     Nav5: string;
     Nav6: string;
+    language: any;
+}
+
+export interface NavigationBarState {
+    language: string;
 }
 
 export interface LoginProps {
@@ -19,7 +23,8 @@ export interface LoginProps {
 }
 
 export interface AppState {
-    login: Boolean;
+    login?: Boolean;
+    language?: String;
 }
 
 export interface ContactState {

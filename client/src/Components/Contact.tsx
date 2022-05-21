@@ -12,6 +12,7 @@ import Phone from "./icons/Telephone.png";
 import Location from "./icons/Location.png";
 import Facebook from "./icons/Facebook.png";
 import i18n from "../i18n/i18n.json";
+import { Trans } from "react-i18next";
 
 // wenn Props oder State der Klasse leer ist muss es mit einem leeren Object gefüllt werden -> <{}, State>
 
@@ -70,7 +71,9 @@ class Contact extends React.Component<Props, State> {
                 check: true,
             });
         } else {
-            alert("Bitte füllen sie zuerst alle Felder aus!");
+            //TODO: es wird [Object] alerted
+            let value = <Trans i18nKey="notFilled" />;
+            alert(value);
         }
     }
 
@@ -101,24 +104,28 @@ class Contact extends React.Component<Props, State> {
         return (
             <div className="Contact-bg">
                 <div className="Contact-spacer"></div>
-                <Header id="contactUs" header="Kontaktiere uns" />
+                <Header id="contactUs" />
                 <div className="Contact-container Contact-wrap ">
                     <div
                         className="Contact-item "
                         style={{ textAlign: "center" }}
                     >
-                        <h3>{i18n.contactInfo}</h3>
+                        <h3>
+                            <Trans i18nKey={"contactInfo"} />
+                        </h3>
                         <p>
                             <img src={Location} alt="Location" />
-                            &nbsp;{i18n.location}
+                            &nbsp;
+                            <Trans i18nKey={"location"} />
                         </p>
                         <p>
                             <img src={Phone} alt="Phone" />
-                            &nbsp;{i18n.phoneNumber}
+                            &nbsp;
+                            <Trans i18nKey={"phoneNumber"} />
                         </p>
                         <p>
                             <img src={Email} alt="Email" />
-                            &nbsp; {i18n.email}
+                            &nbsp; <Trans i18nKey={"email"} />
                         </p>
                         <div className="Contact-container">
                             <div className="Contact-item">
@@ -154,44 +161,50 @@ class Contact extends React.Component<Props, State> {
                         <Form onSubmit={this.sendEmail}>
                             <div className="Contact-container Contact-wrap Contact-noPaddingImportant">
                                 <div className="Contact-nameInput">
+                                    <Form.Label>
+                                        <Trans i18nKey={"lableContactName"} />
+                                    </Form.Label>
                                     <Form.Control
                                         id="nameInput"
                                         name="name"
                                         type="text"
-                                        placeholder={i18n.phContactName}
                                         onChange={this.changeNameInput}
                                         value={this.state.nameInput}
                                     />
                                 </div>
                                 <div className="Contact-emailInput">
+                                    <Form.Label>
+                                        <Trans i18nKey={"lableEmail"} />
+                                    </Form.Label>
                                     <Form.Control
                                         id="emailInput"
                                         name="user_email"
                                         type="email"
-                                        placeholder={i18n.phEmail}
                                         onChange={this.changeEmailInput}
                                         value={this.state.emailInput}
                                     />
                                 </div>
                             </div>
                             <div className="Contact-container Contact-textArea">
+                                <Form.Label>
+                                    <Trans i18nKey={"lableMessage"} />
+                                </Form.Label>
                                 <Form.Control
                                     id="messageInput"
                                     name="message"
                                     as="textarea"
                                     rows={3}
-                                    placeholder={i18n.phMessage}
                                     onChange={this.changeMessageInput}
                                     value={this.state.messageInput}
                                 />
                             </div>
-                            <div className="Contact-container Contact-textArea">
+                            <div className="Contact-container">
                                 <Button
                                     id="idBtn"
                                     type="submit"
                                     variant="primary"
                                 >
-                                    {i18n.send}
+                                    <Trans i18nKey={"send"} />
                                 </Button>
                             </div>
                         </Form>

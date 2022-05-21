@@ -6,6 +6,7 @@ import NikHuber from "./pictures/Nik_Huber.jpg";
 import GeroSteigerwald from "./pictures/Gero_Steigerwald.jpg";
 import i18n from "../i18n/i18n.json";
 import MemberDialog from "./MemberDialog";
+import { Trans } from "react-i18next";
 
 const TheBand: FC = () => {
     const [modalShow, setModalShow] = React.useState<boolean>(false);
@@ -13,9 +14,11 @@ const TheBand: FC = () => {
 
     return (
         <div>
-            <Header id="theBand" header="Die Band" />
+            <Header id="theBand" />
             <div className="theBand-container">
-                <span className="theBand-mainText">{i18n.bandText}</span>
+                <span className="theBand-mainText">
+                    <Trans i18nKey="bandText" />
+                </span>
             </div>
             <div className="theBand-container theBand-wrap">
                 <div className="theBand-item theBand-width">

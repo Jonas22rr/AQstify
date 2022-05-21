@@ -1,10 +1,38 @@
 import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavigationBarProps as Props } from "../model/types";
+import {
+    NavigationBarProps as Props,
+    NavigationBarState as State,
+} from "../model/types";
+import { ThemeProvider } from "@mui/material";
 
-class NavigationBar extends React.Component<Props, {}> {
+class NavigationBar extends React.Component<Props, State> {
+    public constructor(props: Props) {
+        super(props);
+        this.state = {
+            language: "Language",
+        } as State;
+
+        this.setGerman = this.setGerman.bind(this);
+        this.setEnglish = this.setEnglish.bind(this);
+    }
+
+    private setGerman(): void {
+        this.setState({
+            language: "German",
+        });
+        this.props.language("de");
+    }
+
+    private setEnglish(): void {
+        this.setState({
+            language: "English",
+        });
+        this.props.language("en");
+    }
+
     render() {
         return (
             <div id="Navbar-MainContainer">
@@ -63,6 +91,23 @@ class NavigationBar extends React.Component<Props, {}> {
                             >
                                 {this.props.Nav5}
                             </Nav.Link>
+                            <NavDropdown
+                                title={this.state.language}
+                                className="hover-underline-animation"
+                            >
+                                <NavDropdown.Item
+                                    defaultValue={"DE"}
+                                    onClick={this.setGerman}
+                                >
+                                    German
+                                </NavDropdown.Item>
+                                <NavDropdown.Item
+                                    defaultValue={"EN"}
+                                    onClick={this.setEnglish}
+                                >
+                                    English
+                                </NavDropdown.Item>
+                            </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

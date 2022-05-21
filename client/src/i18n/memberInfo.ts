@@ -3,17 +3,22 @@ import { Memberinfos } from "../model/types";
 export const MemberInfos: Memberinfos[] = [
     {
         id: "tb",
-        name: "Thorsten Bott",
-        infoText: "TB ölkajsdfölkjadfölkjadsfölkj",
+        name: "tB",
+        infoText: "memberDialogTbInfo",
     },
     {
         id: "nh",
-        name: "Nik Huber",
-        infoText: "NH ölkajsdfölkjadfölkjadsfölkj",
+        name: "nH",
+        infoText: "memberDialogNhInfo",
     },
     {
         id: "gs",
-        name: "Gero Steigerwald",
-        infoText: "GS ölkajsdfölkjadfölkjadsfölkj",
+        name: "gS",
+        infoText: "memberDialogNhInfo",
+    },
+    {
+        id: "mb",
+        name: "mB",
+        infoText: "memberDialogMbInfo",
     },
 ];

@@ -6,6 +6,7 @@ import { MemberInfos } from "../i18n/memberInfo";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { Trans } from "react-i18next";
 
 const style = {
     position: "absolute" as "absolute",
@@ -14,8 +15,9 @@ const style = {
     transform: "translate(-50%, -50%)",
     width: 400,
     bgcolor: "gray",
-    border: "2px solid #000",
-    boxShadow: 24,
+    border: "2px solid #ffffff",
+    textdecoration: "none",
+    boxShadow: 0,
     p: 4,
 };
 
@@ -38,6 +40,7 @@ const MemberDialog: FunctionComponent<MemberDialogProps> = (props) => {
     if (member) {
         return (
             <Modal
+                disableEnforceFocus
                 open={showDialog}
                 onClose={onCloseDialog}
                 aria-labelledby="modal-modal-title"
@@ -49,10 +52,10 @@ const MemberDialog: FunctionComponent<MemberDialogProps> = (props) => {
                         variant="h6"
                         component="h2"
                     >
-                        {member?.name}
+                        <Trans i18nKey={member?.name} />
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        {member?.infoText}
+                        <Trans i18nKey={member?.infoText} />
                     </Typography>
                 </Box>
             </Modal>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import { HeaderProps as Props } from "../model/types";
+import { Trans } from "react-i18next";
 
 //Vorlage (für breite usw) um in den anderen Containern zu verwenden
 
@@ -14,7 +15,9 @@ class Header extends React.Component<Props> {
                 <div id={this.props.id} className="anker">
                     &nbsp;
                 </div>
-                <h1>{this.props.header}</h1>
+                <h1>
+                    <Trans i18nKey={this.props.id} />
+                </h1>
             </div>
         );
     }

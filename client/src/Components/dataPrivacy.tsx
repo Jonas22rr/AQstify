@@ -3,7 +3,7 @@ import Header from "./Header";
 
 class DataPrivacy extends React.Component<{}, {}> {
     render() {
-        return <Header id="privacy" header="Datenschutz" />;
+        return <Header id="dataPrivacy" />;
     }
 }
 

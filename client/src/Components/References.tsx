@@ -6,7 +6,7 @@ class References extends React.Component<{}, {}> {
     render() {
         return (
             <div>
-                <Header id="references" header="Referenzen" />
+                <Header id="references" />
                 <div className="Ref-container"></div>
             </div>
         );
