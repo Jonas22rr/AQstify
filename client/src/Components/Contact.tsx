@@ -11,7 +11,7 @@ import Email from "./icons/Email.png";
 import Phone from "./icons/Telephone.png";
 import Location from "./icons/Location.png";
 import Facebook from "./icons/Facebook.png";
-import i18n from "../i18n/i18n.json";
+import links from "../i18n/Links.json";
 import { Trans } from "react-i18next";
 
 // wenn Props oder State der Klasse leer ist muss es mit einem leeren Object gefüllt werden -> <{}, State>
@@ -129,7 +129,7 @@ class Contact extends React.Component<Props, State> {
                         </p>
                         <div className="Contact-container">
                             <div className="Contact-item">
-                                <a href={i18n.instagramLink}>
+                                <a href={links.instagramLink}>
                                     <img
                                         className="Contact-insta"
                                         alt="instagram"

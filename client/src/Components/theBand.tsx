@@ -4,7 +4,6 @@ import "./theBand.css";
 import ThorstenBott from "./pictures/Thorsten_Bott.jpeg";
 import NikHuber from "./pictures/Nik_Huber.jpg";
 import GeroSteigerwald from "./pictures/Gero_Steigerwald.jpg";
-import i18n from "../i18n/i18n.json";
 import MemberDialog from "./MemberDialog";
 import { Trans } from "react-i18next";
 
@@ -23,11 +22,13 @@ const TheBand: FC = () => {
             <div className="theBand-container theBand-wrap">
                 <div className="theBand-item theBand-width">
                     <div className="theBand-member theBand-width">
-                        <span className="theBand-name">{i18n.tB}</span>
+                        <span className="theBand-name">
+                            <Trans i18nKey={"tB"} />
+                        </span>
                         <img
                             className="theBand-memberPic theBand-picWidth"
                             src={ThorstenBott}
-                            alt={i18n.tB}
+                            alt="TB"
                             onClick={() => {
                                 setModalShow(true);
                                 setMember("tb");
@@ -37,11 +38,13 @@ const TheBand: FC = () => {
                 </div>
                 <div className="theBand-item theBand-width">
                     <div className="theBand-member theBand-width">
-                        <span className="theBand-name">{i18n.nH}</span>
+                        <span className="theBand-name">
+                            <Trans i18nKey={"nH"} />
+                        </span>
                         <img
                             className="theBand-memberPic theBand-picWidth"
                             src={NikHuber}
-                            alt={i18n.nH}
+                            alt="NH"
                             onClick={() => {
                                 setModalShow(true);
                                 setMember("nh");
@@ -51,11 +54,13 @@ const TheBand: FC = () => {
                 </div>
                 <div className="theBand-item theBand-width">
                     <div className="theBand-member theBand-width">
-                        <span className="theBand-name">{i18n.gS}</span>
+                        <span className="theBand-name">
+                            <Trans i18nKey={"gS"} />
+                        </span>
                         <img
                             className="theBand-memberPic theBand-picWidth"
                             src={GeroSteigerwald}
-                            alt={i18n.gS}
+                            alt="GS"
                             onClick={() => {
                                 setModalShow(true);
                                 setMember("gs");
@@ -65,14 +70,16 @@ const TheBand: FC = () => {
                 </div>
                 <div className="theBand-item theBand-width">
                     <div className="theBand-member theBand-width">
-                        <span className="theBand-name">{i18n.tB}</span>
+                        <span className="theBand-name">
+                            <Trans i18nKey={"mB"} />
+                        </span>
                         <img
                             className="theBand-memberPic  theBand-picWidth"
                             src={ThorstenBott}
-                            alt="Thorsten Bott"
+                            alt="MB"
                             onClick={() => {
                                 setModalShow(true);
-                                setMember("tb");
+                                setMember("mb");
                             }}
                         ></img>
                     </div>

@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { MemberDialogProps, Memberinfos } from "../model/types.js";
 import "./MemberDialog.css";
-import i18n from "../i18n/i18n.json";
 import { MemberInfos } from "../i18n/memberInfo";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -74,7 +73,7 @@ const MemberDialog: FunctionComponent<MemberDialogProps> = (props) => {
                         variant="h6"
                         component="h2"
                     >
-                        {i18n.errorMessage}
+                        <Trans i18nKey={"errorMessage"} />
                     </Typography>
                 </Box>
             </Modal>
