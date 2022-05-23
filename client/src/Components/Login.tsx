@@ -4,6 +4,16 @@ import { LoginProps as Props } from "../model/types";
 
 const Login: FC<Props> = ({ userLogin }) => {
     const [password, setPassword] = useState("");
+
+    function onClickBtn(): void {
+        if (password === "2412") {
+            userLogin(true);
+            sessionStorage.setItem("password", "2412");
+        } else {
+            userLogin(false);
+        }
+    }
+
     return (
         <div className="Login-Container">
             <input
@@ -13,13 +23,7 @@ const Login: FC<Props> = ({ userLogin }) => {
                 placeholder="Enter Password"
                 onChange={(event) => setPassword(event.target.value)}
             ></input>
-            <button
-                type="submit"
-                className="Login-Btn"
-                onClick={() =>
-                    password === "2412" ? userLogin(true) : userLogin(false)
-                }
-            >
+            <button type="submit" className="Login-Btn" onClick={onClickBtn}>
                 Submit
             </button>
         </div>

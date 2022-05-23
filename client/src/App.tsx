@@ -38,9 +38,14 @@ function App() {
         i18n.changeLanguage(language.toString());
     }, [language]);
 
+    function getLogin(): boolean {
+        const password = sessionStorage.getItem("password");
+        return password === "2412";
+    }
+
     // prettier-ignore
     //@ts-ignore
-    return ( login === true ? 
+    return ( getLogin() || login === "2412" ? 
         <Suspense fallback="Loading...">
             <BrowserRouter>
                 <div id="App" className="App">
