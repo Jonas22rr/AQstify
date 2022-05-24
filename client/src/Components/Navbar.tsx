@@ -94,7 +94,7 @@ class NavigationBar extends React.Component<Props, State> {
                                     {this.props.Nav5}
                                 </Nav.Link>
                             </Nav>
-                            <Nav className="padRight">
+                            <Nav>
                                 <NavDropdown
                                     title={this.state.language}
                                     className="hover-underline-animation"
