@@ -50,3 +50,7 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .padRight{
+      padding-right: 35px;
+  }

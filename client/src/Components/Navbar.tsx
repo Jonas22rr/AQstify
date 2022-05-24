@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -35,80 +35,86 @@ class NavigationBar extends React.Component<Props, State> {
     render() {
         return (
             <div id="Navbar-MainContainer">
-                <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-                    <Navbar.Brand className="Navbar-margin-left">
-                        <Nav.Link href="/" className="NameTag">
-                            AQstify
-                        </Nav.Link>
-                    </Navbar.Brand>
-                    <Navbar.Toggle
-                        aria-controls="navbarScroll"
-                        className="Navbar-margin"
-                    />
-                    <Navbar.Collapse
-                        id="navbarScroll"
-                        className="Navbar-margin-left Navbar-margin-top"
-                    >
-                        <Nav
-                            className="me-auto my-2 my-lg-0"
-                            style={{ maxHeight: "100px" }}
-                            navbarScroll
+                <Navbar
+                    bg="dark"
+                    variant="dark"
+                    expand="lg"
+                    fixed="top"
+                    collapseOnSelect
+                >
+                    <Container>
+                        <Navbar.Brand>
+                            <Nav.Link href="/" className="NameTag ">
+                                AQstify
+                            </Nav.Link>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse
+                            // className="Navbar-margin-left Navbar-margin-top"
+                            id="responsive-navbar-nav"
                         >
-                            <Nav.Link
-                                href="/"
-                                className="hover-underline-animation"
+                            <Nav
+                                className="me-auto "
+                                // style={{ maxHeight: "100px" }}
                             >
-                                {this.props.Nav1}
-                            </Nav.Link>
-                            <Nav.Link
-                                href="#theBand"
-                                className="hover-underline-animation"
-                            >
-                                {this.props.Nav2}
-                            </Nav.Link>
-                            <Nav.Link
-                                href="#references"
-                                className="hover-underline-animation"
-                            >
-                                {this.props.Nav3}
-                            </Nav.Link>
-                            <Nav.Link
-                                href="#watch"
-                                className="hover-underline-animation"
-                            >
-                                {this.props.Nav6}
-                            </Nav.Link>
-                            <Nav.Link
-                                href="#contactUs"
-                                className="hover-underline-animation"
-                            >
-                                {this.props.Nav4}
-                            </Nav.Link>
-                            <Nav.Link
-                                href="/photogallery"
-                                className="hover-underline-animation"
-                            >
-                                {this.props.Nav5}
-                            </Nav.Link>
-                            <NavDropdown
-                                title={this.state.language}
-                                className="hover-underline-animation"
-                            >
-                                <NavDropdown.Item
-                                    defaultValue={"DE"}
-                                    onClick={this.setGerman}
+                                <Nav.Link
+                                    href="/"
+                                    className="hover-underline-animation"
                                 >
-                                    German
-                                </NavDropdown.Item>
-                                <NavDropdown.Item
-                                    defaultValue={"EN"}
-                                    onClick={this.setEnglish}
+                                    {this.props.Nav1}
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#theBand"
+                                    className="hover-underline-animation"
                                 >
-                                    English
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                    </Navbar.Collapse>
+                                    {this.props.Nav2}
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#references"
+                                    className="hover-underline-animation"
+                                >
+                                    {this.props.Nav3}
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#watch"
+                                    className="hover-underline-animation"
+                                >
+                                    {this.props.Nav6}
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="#contactUs"
+                                    className="hover-underline-animation"
+                                >
+                                    {this.props.Nav4}
+                                </Nav.Link>
+                                <Nav.Link
+                                    href="/photogallery"
+                                    className="hover-underline-animation"
+                                >
+                                    {this.props.Nav5}
+                                </Nav.Link>
+                            </Nav>
+                            <Nav className="padRight">
+                                <NavDropdown
+                                    title={this.state.language}
+                                    className="hover-underline-animation"
+                                >
+                                    <NavDropdown.Item
+                                        defaultValue={"DE"}
+                                        onClick={this.setGerman}
+                                    >
+                                        German
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item
+                                        defaultValue={"EN"}
+                                        onClick={this.setEnglish}
+                                    >
+                                        English
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Container>
                 </Navbar>
             </div>
         );
