@@ -42,7 +42,7 @@ class NavigationBar extends React.Component<Props, State> {
                     fixed="top"
                     collapseOnSelect
                 >
-                    <Container>
+                    <Container fluid>
                         <Navbar.Brand>
                             <Nav.Link href="/" className="NameTag ">
                                 AQstify
