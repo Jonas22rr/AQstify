@@ -24,7 +24,7 @@ export interface LoginProps {
 
 export interface AppState {
     login?: Boolean;
-    language?: String;
+    language?: String | null;
 }
 
 export interface ContactState {

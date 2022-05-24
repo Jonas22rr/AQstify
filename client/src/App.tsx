@@ -35,7 +35,10 @@ function App() {
     });
 
     useEffect(() => {
-        i18n.changeLanguage(language.toString());
+        if (language) {
+            i18n.changeLanguage(language.toString());
+            sessionStorage.setItem("language", language as string);
+        }
     }, [language]);
 
     function getLogin(): boolean {

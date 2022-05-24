@@ -18,6 +18,15 @@ class NavigationBar extends React.Component<Props, State> {
         this.setEnglish = this.setEnglish.bind(this);
     }
 
+    componentDidMount() {
+        const settedLanguage = sessionStorage.getItem("language");
+        if (settedLanguage === "de") {
+            this.setGerman();
+        } else if (settedLanguage === "en") {
+            this.setEnglish();
+        }
+    }
+
     private setGerman(): void {
         this.setState({
             language: "German",
