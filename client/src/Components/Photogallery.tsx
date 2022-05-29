@@ -18,7 +18,7 @@ class Photogallery extends React.Component {
     render() {
         return (
             <div>
-                <Header header="Fotogalerie" />
+                <Header id="Fotogalerie" />
                 <PhotoAlbum layout="rows" photos={photos} />
             </div>
         );
