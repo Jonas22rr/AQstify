@@ -1,5 +1,3 @@
-export interface global {}
-
 export interface HeaderProps {
     id: string;
 }
