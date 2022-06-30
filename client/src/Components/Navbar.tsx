@@ -58,14 +58,8 @@ class NavigationBar extends React.Component<Props, State> {
                             </Nav.Link>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse
-                            // className="Navbar-margin-left Navbar-margin-top"
-                            id="responsive-navbar-nav"
-                        >
-                            <Nav
-                                className="me-auto "
-                                // style={{ maxHeight: "100px" }}
-                            >
+                        <Navbar.Collapse id="responsive-navbar-nav">
+                            <Nav className="me-auto ">
                                 <Nav.Link
                                     href="/"
                                     className="hover-underline-animation"
@@ -73,25 +67,25 @@ class NavigationBar extends React.Component<Props, State> {
                                     {this.props.Nav1}
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="#theBand"
+                                    href="/#theBand"
                                     className="hover-underline-animation"
                                 >
                                     {this.props.Nav2}
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="#references"
+                                    href="/#references"
                                     className="hover-underline-animation"
                                 >
                                     {this.props.Nav3}
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="#watch"
+                                    href="/#watch"
                                     className="hover-underline-animation"
                                 >
                                     {this.props.Nav6}
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="#contactUs"
+                                    href="/#contactUs"
                                     className="hover-underline-animation"
                                 >
                                     {this.props.Nav4}
