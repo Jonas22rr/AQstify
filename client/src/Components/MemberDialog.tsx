@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
-import { MemberDialogProps, Memberinfos } from "../model/types.js";
+import { MemberDialogProps, MemberInfos } from "../model/types.js";
 import "./MemberDialog.css";
-import { MemberInfos } from "../i18n/memberInfo";
+import { memberInfos } from "../i18n/memberInfo";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -21,9 +21,9 @@ const style = {
 };
 
 const MemberDialog: FunctionComponent<MemberDialogProps> = (props) => {
-    const member = MemberInfos.find(
+    const member = memberInfos.find(
         (e: { id: string }) => e.id === props.member
-    ) as Memberinfos;
+    ) as MemberInfos;
 
     const [showDialog, setShowDialog] = React.useState(props.show);
 
@@ -51,7 +51,7 @@ const MemberDialog: FunctionComponent<MemberDialogProps> = (props) => {
                         variant="h6"
                         component="h2"
                     >
-                        <Trans i18nKey={member?.name} />
+                        <Trans i18nKey={member?.id} />
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                         <Trans i18nKey={member?.infoText} />

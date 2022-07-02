@@ -42,8 +42,10 @@ export interface MemberDialogProps {
     member: string;
 }
 
-export interface Memberinfos {
+export interface MemberInfos {
     id: string;
-    name: string;
+    firstName: string;
+    lastName: string;
     infoText: string;
 }
+

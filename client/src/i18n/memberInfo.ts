@@ -1,24 +1,28 @@
-import { Memberinfos } from "../model/types";
+import { MemberInfos } from "../model/types";
 
-export const MemberInfos: Memberinfos[] = [
+export const memberInfos: MemberInfos[] = [
     {
         id: "tb",
-        name: "tB",
+        firstName: "Thorsten",
+        lastName: "Bott",
         infoText: "memberDialogTbInfo",
     },
     {
         id: "nh",
-        name: "nH",
+        firstName: "Nik",
+        lastName: "Huber",
         infoText: "memberDialogNhInfo",
     },
     {
         id: "gs",
-        name: "gS",
+        firstName: "Gero",
+        lastName: "Steigerwald",
         infoText: "memberDialogNhInfo",
     },
     {
         id: "mb",
-        name: "mB",
+        firstName: "Markus",
+        lastName: "Becker",
         infoText: "memberDialogMbInfo",
     },
 ];

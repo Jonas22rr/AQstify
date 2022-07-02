@@ -13,7 +13,7 @@ import picture8 from "./Components/pictures/8.jpg"
 import picture9 from "./Components/pictures/9.jpg" 
 import pictureGero_Steigerwald from "./Components/pictures/Gero_Steigerwald.jpg" 
 import pictureNik_Huber from "./Components/pictures/Nik_Huber.jpg" 
-import pictureThorsten_Bott from "./Components/pictures/Thorsten_Bott.jpeg" 
+import pictureThorsten_Bott from "./Components/pictures/Thorsten_Bott.jpg" 
 import picturelogo from "./Components/pictures/logo.jpg" 
 
 export const photos = [ 
