@@ -1,89 +1,101 @@
-  .Contact-bg {
+.Contact-bg {
     height: 100% !important;
     background-color: rgb(65, 65, 65);
-  }
+}
 
-  .Contact-spacer {
+.Contact-spacer {
     height: 0px;
-  }
+}
 
-  .Contact-container {
+.Contact-container {
     display: flex;
     margin: auto;
     max-width: 920px !important;
     width: 100%;
     padding: 15px;
+}
 
-  }
+.Contact-containerBtn {
+    display: flex;
+    margin: auto;
+    max-width: 920px !important;
+    width: 100%;
+    padding: 15px;
+}
 
-  .Contact-item {
+.Contact-item {
     flex-direction: row;
-    margin: auto ;
+    margin: auto;
     align-content: center;
     padding: 15px;
 }
 
 .Contact-nameInput {
-  flex-direction: row;
-  margin: auto ;
-  align-content: center;
-  padding-right: 10px;
+    flex-direction: row;
+    margin: auto;
+    align-content: center;
+    padding-right: 10px;
 }
 
 .Contact-emailInput {
-  flex-direction: row;
-  margin: auto ;
-  align-content: center;
-  padding-left: 10px;
+    flex-direction: row;
+    margin: auto;
+    align-content: center;
+    padding-left: 10px;
 }
 
 .Contact-textArea {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 850px) {
-  .Contact-nameInput {
-    margin: auto ;
-    align-content: center;
-    padding: 10px 0px;
-    min-width: 160px;
-    width: 100%;
-    flex-wrap: wrap !important;
-  }
-  
-  .Contact-emailInput {
-    margin: auto ;
-    align-content: center;
-    min-width: 160px;
-    width: 100%;
-    padding: 10px 0px;
-    flex-wrap: wrap !important;
-    
-  }
+    .Contact-nameInput {
+        margin: auto;
+        align-content: center;
+        padding: 10px 0px;
+        min-width: 160px;
+        width: 100%;
+        flex-wrap: wrap !important;
+    }
 
-  .Contact-textArea {
-    padding: 10px 0px;
-  }
+    .Contact-emailInput {
+        margin: auto;
+        align-content: center;
+        min-width: 160px;
+        width: 100%;
+        padding: 10px 0px;
+        flex-wrap: wrap !important;
+    }
 
-  .Contact-wrap {
-    flex-wrap: wrap;
-  }
+    .Contact-containerBtn {
+        display: flex;
+        margin: auto;
+        max-width: 920px !important;
+        width: 100%;
+        padding: 15px 15px 15px 0px;
+    }
 
-  .Contact-noPaddingImportant {
-    padding: 0% !important;
-  }
+    .Contact-textArea {
+        padding: 10px 0px;
+    }
+
+    .Contact-wrap {
+        flex-wrap: wrap;
+    }
+
+    .Contact-noPaddingImportant {
+        padding: 0% !important;
+    }
 }
 
 .Contact-youTube {
-  width: 50px !important;
+    width: 50px !important;
 }
 
 .Contact-facebook {
-  width: 40px !important;
+    width: 40px !important;
 }
 
 .Contact-insta {
-  width: 40px !important;
+    width: 40px !important;
 }
-
-  

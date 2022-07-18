@@ -26,10 +26,10 @@ export interface AppState {
 }
 
 export interface ContactState {
-    check: Boolean;
-    nameInput: string;
-    emailInput: string;
-    messageInput: string;
+    check?: Boolean;
+    nameInput?: string;
+    emailInput?: string;
+    messageInput?: string;
 }
 
 export interface ContactProps {}
@@ -49,3 +49,6 @@ export interface MemberInfos {
     infoText: string;
 }
 
+export interface GetTransForClassComponentProps {
+    id: string;
+}

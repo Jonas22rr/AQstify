@@ -1,9 +1,6 @@
 import React, { FunctionComponent as FC } from "react";
 import Header from "./Header";
 import "./theBand.css";
-// import ThorstenBott from "./pictures/Thorsten_Bott.jpg";
-// import NikHuber from "./pictures/Nik_Huber.jpg";
-// import GeroSteigerwald from "./pictures/Gero_Steigerwald.jpg";
 import MemberDialog from "./MemberDialog";
 import { Trans } from "react-i18next";
 import { memberInfos } from "../i18n/memberInfo";
@@ -11,7 +8,7 @@ import { memberInfos } from "../i18n/memberInfo";
 const TheBand: FC = () => {
     const [modalShow, setModalShow] = React.useState<boolean>(false);
     const [member, setMember] = React.useState<string>("");
-    
+
     return (
         <div>
             <Header id="theBand" />
