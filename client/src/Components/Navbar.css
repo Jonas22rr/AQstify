@@ -3,6 +3,10 @@
     border: 0px;
 }
 
+.Navbar-DropdownFontColor {
+    color: #595959;
+}
+
 .Navbar-BackgroundColor {
     background-color: rgb(25, 25, 25);
 }
