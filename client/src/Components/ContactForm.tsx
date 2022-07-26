@@ -6,7 +6,6 @@ import { ContactProps as Props } from "../model/types";
 import "./Contact.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { rgbToHex } from "@mui/material";
 
 const ContactForm: FunctionComponent<Props> = () => {
     let check: Boolean = false;
