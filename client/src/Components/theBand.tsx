@@ -30,20 +30,24 @@ const TheBand: FC = () => {
                             key={member.id}
                         >
                             <div className="theBand-member theBand-width">
+                                <div className="theBand-pb10">
+                                    <img
+                                        className="theBand-memberPic theBand-picWidth"
+                                        src={pictureSrc}
+                                        alt={
+                                            member.firstName +
+                                            " " +
+                                            member.lastName
+                                        }
+                                        onClick={() => {
+                                            setModalShow(true);
+                                            setMember(member.id);
+                                        }}
+                                    ></img>
+                                </div>
                                 <span className="theBand-name">
                                     <Trans i18nKey={member.id} />
                                 </span>
-                                <img
-                                    className="theBand-memberPic theBand-picWidth"
-                                    src={pictureSrc}
-                                    alt={
-                                        member.firstName + " " + member.lastName
-                                    }
-                                    onClick={() => {
-                                        setModalShow(true);
-                                        setMember(member.id);
-                                    }}
-                                ></img>
                             </div>
                         </div>
                     );
