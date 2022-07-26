@@ -7,6 +7,10 @@
     height: 0px;
 }
 
+.Contact-ErrorDialogBgColor {
+    background-color: rgb(25, 25, 25);
+}
+
 .Contact-container {
     display: flex;
     margin: auto;

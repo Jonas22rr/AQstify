@@ -6,6 +6,7 @@ import { ContactProps as Props } from "../model/types";
 import "./Contact.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { rgbToHex } from "@mui/material";
 
 const ContactForm: FunctionComponent<Props> = () => {
     let check: Boolean = false;
@@ -126,7 +127,10 @@ const ContactForm: FunctionComponent<Props> = () => {
                 </div>
             </Form>
             <ToastContainer
-                theme="dark"
+                toastStyle={{
+                    backgroundColor: "rgb(25, 25, 25)",
+                    border: "2px solid rgb(105, 105, 105)",
+                }}
                 position="top-center"
                 autoClose={5000}
                 hideProgressBar={false}
