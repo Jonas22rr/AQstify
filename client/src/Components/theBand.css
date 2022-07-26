@@ -60,6 +60,10 @@
     cursor: pointer;
 }
 
+.theBand-picWidth:hover {
+    transform: scale(1.08);
+}
+
 .theBand-mainText {
     text-align: center;
 }
