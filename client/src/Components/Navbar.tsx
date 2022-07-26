@@ -45,7 +45,7 @@ class NavigationBar extends React.Component<Props, State> {
         return (
             <div id="Navbar-MainContainer">
                 <Navbar
-                    bg="dark"
+                    className="Navbar-BackgroundColor"
                     variant="dark"
                     expand="lg"
                     fixed="top"
