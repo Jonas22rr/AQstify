@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { Trans } from "react-i18next";
 import Instagram from "./icons/Instagram.png";
 import YouTube from "./icons/YouTube.png";

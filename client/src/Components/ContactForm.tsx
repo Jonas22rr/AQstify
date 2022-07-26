@@ -1,9 +1,4 @@
-import React, {
-    ChangeEvent,
-    FormEvent,
-    FunctionComponent,
-    useState,
-} from "react";
+import { ChangeEvent, FormEvent, FunctionComponent, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Trans, useTranslation } from "react-i18next";
 import emailjs from "emailjs-com";

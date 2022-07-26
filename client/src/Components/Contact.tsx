@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { ContactProps as Props } from "../model/types";
 import ContactInfo from "./ContactInfo";
 import Header from "./Header";
 import ContactForm from "./ContactForm";
 
-const Contact: FunctionComponent<Props> = (props) => {
+const Contact: FunctionComponent<Props> = () => {
     return (
         <div className="Contact-bg">
             <div className="Contact-spacer"></div>

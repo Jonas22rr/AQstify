@@ -1,4 +1,4 @@
-import React, { useState, FunctionComponent as FC } from "react";
+import { useState, FunctionComponent as FC } from "react";
 import "./Login.css";
 import { LoginProps as Props } from "../model/types";
 

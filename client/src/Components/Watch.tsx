@@ -1,4 +1,4 @@
-import React, { FunctionComponent as FC } from "react";
+import { FunctionComponent as FC } from "react";
 import Header from "./Header";
 
 const Watch: FC = () => {
