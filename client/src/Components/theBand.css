@@ -31,6 +31,12 @@
     min-width: 350px;
     max-width: 400px;
 }
+
+.theBand-width:hover {
+    transform: scale(1.05);
+    transition: transform 0.8s;
+}
+
 .theBand-picWidth {
     min-width: 350px;
     max-width: 370px;
@@ -58,11 +64,6 @@
     margin: auto;
     box-shadow: 10px 10px 11px grey;
     cursor: pointer;
-}
-
-.theBand-picWidth:hover {
-    transform: scale(1.08);
-    transition: transform 0.8s;
 }
 
 .theBand-mainText {
