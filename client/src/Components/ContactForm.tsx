@@ -1,23 +1,31 @@
-import { ChangeEvent, FormEvent, FunctionComponent, useState } from "react";
+import {
+    ChangeEvent,
+    FormEvent,
+    FunctionComponent,
+    useState,
+    useRef,
+} from "react";
 import { Button, Form } from "react-bootstrap";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import emailjs from "emailjs-com";
-import { ContactProps as Props } from "../model/types";
+import { ContactProps as Props, RefObject } from "../model/types";
 import "./Contact.css";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ErrorDialog from "./errorDialog";
 
 const ContactForm: FunctionComponent<Props> = () => {
     let check: Boolean = false;
     const [nameInput, setNameInput] = useState<String>("");
     const [emailInput, setEmailInput] = useState<String>("");
     const [messageInput, setMessageInput] = useState<String>("");
-    const { t } = useTranslation();
+    const [errorText, setErrorText] = useState<string>("");
+    const ref = useRef<RefObject>(null);
 
-    async function sendEmail(event: FormEvent<HTMLFormElement>) {
+    async function sendEmail(event: FormEvent<HTMLFormElement>): Promise<void> {
         await checkInputs();
+        let sendedMessage: boolean = await checkSendedMessages();
         event.preventDefault();
-        if (check === true) {
+        if (check === true && sendedMessage === true) {
             emailjs
                 .sendForm(
                     "service_u4pnvsh",
@@ -31,8 +39,10 @@ const ContactForm: FunctionComponent<Props> = () => {
                 .catch((err) => {
                     console.log(err);
                 });
-
             initializeStates();
+            setSendedMessage();
+        } else {
+            check === false ? showToast("notFilled") : showToast("noSpam");
         }
     }
 
@@ -43,24 +53,39 @@ const ContactForm: FunctionComponent<Props> = () => {
         setMessageInput("");
     }
 
-    async function checkInputs() {
-        if (nameInput !== "" && emailInput !== "" && messageInput !== "") {
-            check = true;
-        } else {
-            showToast();
-        }
+    async function checkInputs(): Promise<void> {
+        nameInput !== "" && emailInput !== "" && messageInput !== ""
+            ? (check = true)
+            : (check = false);
     }
 
-    function showToast(): void {
-        toast.error(t("notFilled"), {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-        });
+    async function checkSendedMessages(): Promise<boolean> {
+        let sendMessageFromStorage = sessionStorage.getItem(
+            "sendMessage"
+        ) as string;
+        return (
+            parseInt(sendMessageFromStorage) < 2 ||
+            sendMessageFromStorage === null
+        );
+    }
+
+    async function setSendedMessage(): Promise<void> {
+        let sendMessage: number;
+        let sendMessageFromStorage = sessionStorage.getItem(
+            "sendMessage"
+        ) as string;
+
+        if (sendMessageFromStorage === null) {
+            sendMessageFromStorage = "0";
+        }
+
+        sendMessage = parseInt(sendMessageFromStorage as string) as number;
+        sessionStorage.setItem("sendMessage", (sendMessage + 1).toString());
+    }
+
+    function showToast(dialogText: string): void {
+        setErrorText(dialogText);
+        ref.current?.showToast();
     }
 
     function changeInput(event: ChangeEvent<HTMLInputElement>): void {
@@ -125,21 +150,7 @@ const ContactForm: FunctionComponent<Props> = () => {
                     </Button>
                 </div>
             </Form>
-            <ToastContainer
-                toastStyle={{
-                    backgroundColor: "rgb(25, 25, 25)",
-                    border: "2px solid rgb(105, 105, 105)",
-                }}
-                position="top-center"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
+            <ErrorDialog ref={ref} dialogText={errorText} />
         </div>
     );
 };

@@ -8,7 +8,7 @@ class LegalNotice extends React.Component<{}, {}> {
         return (
             <div className="LegalNotice-Container">
                 <Link to="/impressum" className="Legal-text">
-                    <Trans i18nKey={"imprint"} />
+                    <Trans i18nKey={"imprint.imprint"} />
                 </Link>
                 <span className="Legal-bull">&bull;</span>
                 <Link to="/dataPrivacy" className="Legal-text">

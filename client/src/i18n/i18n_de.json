@@ -12,7 +12,6 @@
     "lableEmail": "Email:",
     "lableMessage": "Nachricht:",
     "send": "senden",
-    "imprint": "Impressum",
     "dataPrivacy": "Datenschutz",
     "pageNotFound": "Dieser Link ist Ungültig. Bitte Überprüfe deine URL",
     "errorMessage": "Hoppla, es ist ein Fehler aufgetreten",
@@ -26,5 +25,27 @@
     "memberDialogTbInfo": "TB info text auf deutsch",
     "memberDialogNhInfo": "NH info text auf deutsch",
     "memberDialogGsInfo": "GS info text auf deutsch",
-    "memberDialogMbInfo": "MB info text auf deutsch"
+    "memberDialogMbInfo": "MB info text auf deutsch",
+    "noSpam": "Wir dulden keinen Spam!",
+    "imprint": {
+        "imprint": "Impressum",
+        "contactHeader": "Kontakt",
+        "text1": "Melibokus GbR",
+        "text2": "Hauptstraße 12",
+        "text3": "63877 Sailauf – Eichenberg",
+        "text4": "Tel.: +49 6024 – 63 95 49",
+        "text5": "Mobil: +49 160 – 907 090 88",
+        "text6": "Fax: +49 6024 – 63 89 13",
+        "text7": "eMail: aqstify.band@gmail.com",
+        "text8": "Internet: https://aqstify.netlify.app",
+        "text9": "Steuernummer: 204 177 01800",
+        "text10": "Finanzamt Aschaffenburg",
+        "contact": {
+            "text1": "Gero Steigerwald",
+            "text2": "Hauptstr. 12",
+            "text3": "63877 Sailauf – Eichenberg",
+            "text4": "Tel: +49 6024 – 63 36 56",
+            "text5": "Mobile: +49 152 – 579 096 13"
+        }
+    }
 }

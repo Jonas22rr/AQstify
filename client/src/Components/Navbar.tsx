@@ -99,11 +99,7 @@ class NavigationBar extends React.Component<Props, State> {
                             </Nav>
                             <Nav>
                                 <NavDropdown
-                                    title={
-                                        <span className="Navbar-DropdownFontColor">
-                                            {this.state.language}
-                                        </span>
-                                    }
+                                    title={this.state.language}
                                     className="hover-underline-animation Navbar-BackgroundColor"
                                     menuVariant="dark"
                                 >
