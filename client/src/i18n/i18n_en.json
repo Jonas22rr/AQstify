@@ -17,7 +17,7 @@
     "pageNotFound": "This link is invalid. Please check your URL",
     "errorMessage": "Oops, an error has occurred",
     "home": "Home",
-    "theBand": "The Band", 
+    "theBand": "The Band",
     "watch": "Watch",
     "references": "References",
     "contactUs": "Contact us",
@@ -26,5 +26,6 @@
     "memberDialogTbInfo": "TB info text on englisch",
     "memberDialogNhInfo": "NH info text on englisch",
     "memberDialogGsInfo": "GS info text on englisch",
-    "memberDialogMbInfo": "MB info text on englisch"
+    "memberDialogMbInfo": "MB info text on englisch",
+    "noSpam": "We do not tolerate spam!"
 }

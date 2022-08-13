@@ -52,3 +52,11 @@ export interface MemberInfos {
 export interface GetTransForClassComponentProps {
     id: string;
 }
+
+export interface RefObject {
+    showToast: () => void;
+}
+
+export interface ErrorDialogProps {
+    dialogText: string;
+}
