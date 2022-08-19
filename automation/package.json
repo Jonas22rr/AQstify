@@ -5,7 +5,6 @@
   "dependencies": {
     "@types/command-line-args": "^5.2.0",
     "@types/js-yaml": "^4.0.5",
-    "@types/node": "^16.11.12",
     "@types/node-fetch": "^2.5.12",
     "command-line-args": "^5.2.0",
     "js-yaml": "^4.1.0",
@@ -26,5 +25,8 @@
     "type": "git",
     "url": "https://myGitHub.repo"
   },
-  "bin": "./bin/PictureAutomation.js"
+  "bin": "./bin/PictureAutomation.js",
+  "devDependencies": {
+    "@types/node": "^18.7.7"
+  }
 }

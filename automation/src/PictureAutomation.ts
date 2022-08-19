@@ -3,7 +3,7 @@ import Writer from "./Writer.js";
 import Deleter from "./Deleter.js";
 
 (async (): Promise<void> => {
-    const picturePath: string = "/Users/jonas/Programming/AQstify/client/src/Components/pictures";
+    const picturePath: string = "/Users/jonas/Programming/AQstify/client/src/assets/pictures";
     const photoPath: string = "/Users/jonas/Programming/AQstify/client/src/photos.js";
 
     const deleter = new Deleter(photoPath)

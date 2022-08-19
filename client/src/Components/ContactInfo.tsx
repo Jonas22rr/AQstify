@@ -1,11 +1,11 @@
 import { FunctionComponent } from "react";
 import { Trans } from "react-i18next";
-import Instagram from "./icons/Instagram.png";
-import YouTube from "./icons/YouTube.png";
-import Email from "./icons/Email.png";
-import Phone from "./icons/Telephone.png";
-import Location from "./icons/Location.png";
-import Facebook from "./icons/Facebook.png";
+import Instagram from "../assets/icons/Instagram.png";
+import YouTube from "../assets/icons/YouTube.png";
+import Email from "../assets/icons/Email.png";
+import Phone from "../assets/icons/Telephone.png";
+import Location from "../assets/icons/Location.png";
+import Facebook from "../assets/icons/Facebook.png";
 import links from "../i18n/Links.json";
 import "./Contact.css";
 
