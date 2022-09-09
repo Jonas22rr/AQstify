@@ -1,4 +1,4 @@
-import { MemberInfos } from "../model/types";
+import { MemberInfos } from "../types/types";
 
 export const memberInfos: MemberInfos[] = [
     {

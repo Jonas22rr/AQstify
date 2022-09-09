@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import PhotoAlbum from "react-photo-album";
 import { photos } from "../photos";
-import { PhotogalleryProps as Props } from "../model/types";
+import { PhotogalleryProps as Props } from "../types/types";
 
 class Photogallery extends React.Component {
     constructor(props: Props) {

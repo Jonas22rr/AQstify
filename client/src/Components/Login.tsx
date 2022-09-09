@@ -1,6 +1,6 @@
 import { useState, FunctionComponent as FC } from "react";
 import "./Login.css";
-import { LoginProps as Props } from "../model/types";
+import { LoginProps as Props } from "../types/types";
 
 const Login: FC<Props> = ({ userLogin }) => {
     const [password, setPassword] = useState("");

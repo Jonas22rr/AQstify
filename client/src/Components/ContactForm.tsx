@@ -8,7 +8,7 @@ import {
 import { Button, Form } from "react-bootstrap";
 import { Trans } from "react-i18next";
 import emailjs from "emailjs-com";
-import { ContactProps as Props, RefObject } from "../model/types";
+import { ContactProps as Props, RefObject } from "../types/types";
 import "./Contact.css";
 import "react-toastify/dist/ReactToastify.css";
 import ErrorDialog from "./errorDialog";

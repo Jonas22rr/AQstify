@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { ContactProps as Props } from "../model/types";
+import { ContactProps as Props } from "../types/types";
 import ContactInfo from "./ContactInfo";
 import Header from "./Header";
 import ContactForm from "./ContactForm";

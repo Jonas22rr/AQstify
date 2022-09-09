@@ -2,7 +2,7 @@ import React, { forwardRef, useImperativeHandle, Ref } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from "react-i18next";
-import { RefObject, ErrorDialogProps } from "../model/types";
+import { RefObject, ErrorDialogProps } from "../types/types";
 
 const ErrorDialog = forwardRef(
     (props: ErrorDialogProps, ref: Ref<RefObject>) => {

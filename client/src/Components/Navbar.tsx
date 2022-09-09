@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {
     NavigationBarProps as Props,
     NavigationBarState as State,
-} from "../model/types";
+} from "../types/types";
 
 class NavigationBar extends React.Component<Props, State> {
     public constructor(props: Props) {

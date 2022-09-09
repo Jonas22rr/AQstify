@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { HeaderProps as Props } from "../model/types";
+import { HeaderProps as Props } from "../types/types";
 import { Trans } from "react-i18next";
 
 //Vorlage (für breite usw) um in den anderen Containern zu verwenden

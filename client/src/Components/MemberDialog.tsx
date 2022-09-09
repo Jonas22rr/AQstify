@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { MemberDialogProps, MemberInfos } from "../model/types.js";
+import { MemberDialogProps, MemberInfos } from "../types/types.js";
 import "./MemberDialog.css";
 import { memberInfos } from "../i18n/memberInfo";
 import Box from "@mui/material/Box";
