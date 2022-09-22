@@ -19,7 +19,7 @@ const TheBand: FC = () => {
             </div>
             <div className="theBand-container theBand-wrap">
                 {memberInfos.map((member) => {
-                    let pictureSrc: string = require("./pictures/" +
+                    let pictureSrc: string = require("../assets/pictures/" +
                         member.firstName +
                         "_" +
                         member.lastName +

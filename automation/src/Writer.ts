@@ -15,7 +15,7 @@ export default class Writer {
 			let dataImport =
 				"import picture" +
 				file[0] +
-				' from "./Components/pictures/' +
+				' from "./assets/pictures/' +
 				fileName +
 				'" \n';
 			try {

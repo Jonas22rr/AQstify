@@ -1,11 +1,11 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./pictures/logo.jpg";
-import five from "./pictures/5.jpg";
-import seven from "./pictures/7.jpg";
-import eight from "./pictures/8.jpg";
-import ten from "./pictures/10.jpg";
+import logo from "../assets/pictures/logo.jpg";
+import five from "../assets/pictures/5.jpg";
+import seven from "../assets/pictures/7.jpg";
+import eight from "../assets/pictures/8.jpg";
+import ten from "../assets/pictures/10.jpg";
 import "./Carousel.css";
 
 class PicCarousel extends React.Component {

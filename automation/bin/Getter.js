@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 export default class Getter {
+    picturePath;
     constructor(picturePath) {
         this.picturePath = picturePath;
     }

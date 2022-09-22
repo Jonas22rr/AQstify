@@ -2,7 +2,7 @@ import Getter from "./Getter.js";
 import Writer from "./Writer.js";
 import Deleter from "./Deleter.js";
 (async () => {
-    const picturePath = "/Users/jonas/Programming/AQstify/client/src/Components/pictures";
+    const picturePath = "/Users/jonas/Programming/AQstify/client/src/assets/pictures";
     const photoPath = "/Users/jonas/Programming/AQstify/client/src/photos.js";
     const deleter = new Deleter(photoPath);
     await deleter.deleteFile();

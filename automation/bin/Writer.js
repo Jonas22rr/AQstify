@@ -1,5 +1,7 @@
 import fs from "fs/promises";
 export default class Writer {
+    photoPath;
+    fileNames;
     constructor(photoPath, fileNames) {
         this.photoPath = photoPath;
         this.fileNames = fileNames;
@@ -13,7 +15,7 @@ export default class Writer {
             let file = await fileName.toString().split(".");
             let dataImport = "import picture" +
                 file[0] +
-                ' from "./Components/pictures/' +
+                ' from "./assets/pictures/' +
                 fileName +
                 '" \n';
             try {
