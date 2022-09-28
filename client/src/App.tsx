@@ -6,7 +6,7 @@ import Homepage from "./Components/Homepage";
 import DataPrivacy from "./Components/dataPrivacy";
 import Photogallery from "./Components/Photogallery";
 import Login from "./Components/Login";
-import { useState, SetStateAction, Suspense, useEffect } from "react";
+import React, { useState, SetStateAction, Suspense, useEffect } from "react";
 import { AppState as State } from "./types/types";
 import i18n_de from "./i18n/i18n_de.json";
 import i18n_en from "./i18n/i18n_en.json";

@@ -8,6 +8,7 @@ import Location from "../assets/icons/Location.png";
 import Facebook from "../assets/icons/Facebook.png";
 import links from "../i18n/Links.json";
 import "./Contact.css";
+import React from "react";
 
 interface ContactInfoProps {}
 

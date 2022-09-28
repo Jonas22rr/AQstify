@@ -3,6 +3,7 @@ import { ContactProps as Props } from "../types/types";
 import ContactInfo from "./ContactInfo";
 import Header from "./Header";
 import ContactForm from "./ContactForm";
+import React from "react";
 
 const Contact: FunctionComponent<Props> = () => {
     return (

@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from "react";
-import { FunctionComponent as FC } from "react";
+import React, { FunctionComponent as FC } from "react";
 import Header from "./Header";
 import { Container } from "react-bootstrap";
 import "./Watch.css";
