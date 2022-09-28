@@ -15,20 +15,20 @@ interface ContactInfoProps {}
 const ContactInfo: FunctionComponent<ContactInfoProps> = (props) => {
     return (
         <div className="Contact-item " style={{ textAlign: "center" }}>
-            <h3>
+            <h3 className="Contact-infoHeader">
                 <Trans i18nKey={"contactInfo"} />
             </h3>
-            <p>
+            <p className="Contact-Infotext">
                 <img src={Location} alt="Location" />
                 &nbsp;
                 <Trans i18nKey={"location"} />
             </p>
-            <p>
+            <p className="Contact-Infotext">
                 <img src={Phone} alt="Phone" />
                 &nbsp;
                 <Trans i18nKey={"phoneNumber"} />
             </p>
-            <p>
+            <p className="Contact-Infotext">
                 <img src={Email} alt="Email" />
                 &nbsp; <Trans i18nKey={"email"} />
             </p>
