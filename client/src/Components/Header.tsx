@@ -3,8 +3,6 @@ import "./Header.css";
 import { HeaderProps as Props } from "../types/types";
 import { Trans } from "react-i18next";
 
-//Vorlage (für breite usw) um in den anderen Containern zu verwenden
-
 class Header extends React.Component<Props> {
     public constructor(props: Props) {
         super(props);
