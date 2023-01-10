@@ -12,7 +12,7 @@ class LegalNotice extends React.Component<{}, {}> {
                 </Link>
                 <span className="Legal-bull">&bull;</span>
                 <Link to="/dataPrivacy" className="Legal-text">
-                    <Trans i18nKey={"dataPrivacy"} />
+                    <Trans i18nKey={"dataPrivacy.dataPrivacy"} />
                 </Link>
             </div>
         );
