@@ -8,7 +8,6 @@ export interface NavigationBarProps {
     Nav3: string;
     Nav4: string;
     Nav5: string;
-    Nav6: string;
     language: any;
 }
 
@@ -32,9 +31,9 @@ export interface ContactState {
     messageInput?: string;
 }
 
-export interface ContactProps {}
+export interface ContactProps { }
 
-export interface PhotogalleryProps {}
+export interface PhotogalleryProps { }
 
 export interface MemberDialogProps {
     show: boolean;

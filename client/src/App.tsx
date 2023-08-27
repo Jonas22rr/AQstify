@@ -5,7 +5,6 @@ import Impressum from "./Components/Impressum";
 import Homepage from "./Components/Homepage";
 import DataPrivacy from "./Components/dataPrivacy";
 import Photogallery from "./Components/Photogallery";
-import Login from "./Components/Login";
 import React, { useState, SetStateAction, Suspense, useEffect } from "react";
 import { AppState as State } from "./types/types";
 import i18n_de from "./i18n/i18n_de.json";
@@ -26,10 +25,6 @@ i18n.use(initReactI18next).init({
 function App() {
     const { t } = useTranslation();
 
-    let [login, setLogin] = useState<State>({
-        login: false,
-    });
-
     let [language, setLanguage] = useState<State>({
         language: "",
     });
@@ -41,32 +36,31 @@ function App() {
         }
     }, [language]);
 
-    function getLogin(): boolean {
-        const password = sessionStorage.getItem("password");
-        return password === "2412";
-    }
-
     // prettier-ignore
     //@ts-ignore
-    return ( getLogin() || login === "2412" ? 
+    return (
         <Suspense fallback="Loading...">
             <BrowserRouter>
                 <div id="App" className="App">
                     <div className="App">
                         <NavigationBar
-                            Nav1={t('home')}
+                            Nav1={t("home")}
                             Nav2={t("theBand")}
-                            Nav3={t("references")}
+                            Nav3={t("watch")}
                             Nav4={t("contactUs")}
                             Nav5={t("photogalery")}
-                            Nav6={t("watch")}
-                            language={(language: SetStateAction<State>) => setLanguage(language)}
+                            language={(language: SetStateAction<State>) =>
+                                setLanguage(language)
+                            }
                         />
                         <h1 className="App-CB">&nbsp;</h1>
                         <Routes>
-                            <Route path="/" element={<Homepage/>}/>
+                            <Route path="/" element={<Homepage />} />
                             <Route path="/impressum" element={<Impressum />} />
-                            <Route path="/dataPrivacy" element={<DataPrivacy />} />
+                            <Route
+                                path="/dataPrivacy"
+                                element={<DataPrivacy />}
+                            />
                             <Route
                                 path="/photogallery"
                                 element={<Photogallery />}
@@ -75,9 +69,7 @@ function App() {
                                 path="*"
                                 element={
                                     <main style={{ padding: "1rem" }}>
-                                        <p>
-                                            {t("pageNotFound")}
-                                        </p>
+                                        <p>{t("pageNotFound")}</p>
                                     </main>
                                 }
                             />
@@ -86,8 +78,6 @@ function App() {
                 </div>
             </BrowserRouter>
         </Suspense>
-     : 
-        <Login userLogin={(login: SetStateAction<State>)=> setLogin(login) }/>
     );
 }
 
